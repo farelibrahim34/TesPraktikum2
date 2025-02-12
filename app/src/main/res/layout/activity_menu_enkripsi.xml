@@ -7,4 +7,51 @@
     android:layout_height="match_parent"
     tools:context=".MenuEnkripsi">
 
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="masukkan kalimat"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="masukkan key"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
+        app:layout_constraintStart_toStartOf="@+id/editTextText3"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/buttonEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enkripsi"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText4"
+        app:layout_constraintStart_toStartOf="@+id/editTextText4"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Button
+        android:id="@+id/buttonDek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dekripsi"
+        app:layout_constraintEnd_toEndOf="@+id/buttonEn"
+        app:layout_constraintStart_toStartOf="@+id/buttonEn"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="77dp"
+        android:layout_height="18dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDek"
+        app:layout_constraintStart_toStartOf="@+id/buttonDek"
+        tools:layout_editor_absoluteY="503dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
